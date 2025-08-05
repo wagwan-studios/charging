@@ -9,7 +9,7 @@ import Stations from './pages/Stations'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/charging/'>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/help' element={<Help/>}/>
