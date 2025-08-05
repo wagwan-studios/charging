@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import actionIcons from "../assets/images/05_Screens/Screen_Navi.png";
+import { useNavigate } from 'react-router-dom';
 
 
 const HamburgerIcon = () => (
@@ -17,6 +18,7 @@ const CloseIcon = () => (
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate()
   
 
     const navLinks = [
@@ -78,7 +80,8 @@ const Header: React.FC = () => {
                     {navLinks.map((link) => (
                         <a
                             key={link.text}
-                            href={link.href}
+                            // href={link.href}
+                            onClick={()=>navigate(link.href)}
                             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50"
                         >
                             {link.text}
