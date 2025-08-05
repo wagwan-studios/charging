@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 import SupportAndContactDetail from './pages/SupportAndContactDetail'
@@ -9,14 +9,14 @@ import Stations from './pages/Stations'
 function App() {
 
   return (
-    <BrowserRouter basename='/charging/'>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/help' element={<Help/>}/>
         <Route path='/how-to-charge' element={<SupportAndContactDetail/>}/>
         <Route path='/stations' element={<Stations/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
