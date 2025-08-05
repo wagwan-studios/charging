@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Eon';
+  src: url('../font/EON/EON-Head.otf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1400px) {
+  .timeCalImg{
+    width: 600px !important;
+  }
+}
+
+@media only screen and (max-width:1125px) {
+  .herocontent{
+    width: 100%;
+    text-align: center;
+  }
+
+  .heroImg{
+    display: none;
+  }
+  .leftSect, .rightSect{
+    width: 100%;
+    position: relative;
+    right: 0px;
+  }
+
+  .leftSect1, .leftSect2{
+    width: 100%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .leftSect2Img{
+    width: 100% !important;
+    left: 0px !important;
+    top:0px !important;
+    position: relative !important;
+  }
+  .leftSect1 img{
+    width: 100% !important;
+    left: 0px !important;
+    top:0px !important;
+    position: relative;
+  }
+
+  .rightSect1{
+    width: 100%;
+    position: relative;
+  }
+
+  .mainsect{
+    display: flex;
+    width: 100% !important;
+    margin: 0px auto;
+    flex-wrap: wrap;
+  }
+  .cutombtn{
+    margin: 0px auto;
+  }
+}
